@@ -18,23 +18,23 @@ Une application web moderne et simple pour la gestion de produits. Elle permet a
 
 **Page de Connexion**
 *L'accès à l'application est protégé par Spring Security.*
-![Page de Connexion](login.png)
+![Page de Connexion](screenshots/auth.png)
 
-**Liste des Produits**
+**Liste des Produits (Vue Utilisateur)**
 *Vue paginée et consultable par tous les utilisateurs connectés.*
-![Liste des Produits](product-list.png)
+![Liste des Produits](liste_user.png)
 
-**Actions Administrateur**
+**Liste des Produits (Vue Admin)**
 *Le rôle "ADMIN" peut voir et utiliser le bouton de suppression.*
-![Liste des Produits avec suppression](product-list-with-delete.png)
+![Liste des Produits avec suppression](list_products_admin.png)
 
 **Formulaire d'Ajout**
 *Formulaire simple pour créer un nouveau produit (accès admin).*
-![Formulaire d'Ajout de Produit](new-product-form.png)
+![Formulaire d'Ajout de Produit](add_product.png)
 
 **Validation des Données**
 *La validation côté serveur empêche la soumission de données incorrectes.*
-![Formulaire d'Ajout de Produit avec Validation](new-product-form-validation.png)
+![Formulaire d'Ajout de Produit avec Validation](add_product1.png)
 
 </details>
 
@@ -51,14 +51,14 @@ Une application web moderne et simple pour la gestion de produits. Elle permet a
 
 ## 🛠️ Technologies Utilisées
 
-*   ☕ **Java** : Langage principal de l'application.
-*   🍃 **Spring Boot** : Pour une configuration rapide et une application autonome.
-*   💾 **Spring Data JPA & Hibernate** : Pour la persistance des données et l'interaction avec la base de données.
-*   🗄️ **Base de données H2** : Une base de données en mémoire, parfaite pour le développement et les démos.
-*   🛡️ **Spring Security** : Pour gérer l'authentification et les autorisations basées sur les rôles.
-*   🌿 **Thymeleaf** : Moteur de templates pour construire des vues dynamiques côté serveur.
-*   💅 **Bootstrap** : Framework CSS pour un design responsive et moderne.
-*   📦 **Maven** : Pour la gestion des dépendances et le build du projet.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![H2](https://img.shields.io/badge/H2-484848?style=for-the-badge&logo=h2&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
 ---
 
@@ -192,7 +192,7 @@ Pour lancer ce projet localement, suivez ces étapes :
 
 1.  **Clonez le dépôt :**
     ```bash
-    git clone https://github.com/votre-nom-utilisateur/productsManagementSystem-main.git
+    git clone https://github.com/adamfutur/productsManagementSystem-main.git
     ```
 
 2.  **Naviguez vers le répertoire du projet :**
