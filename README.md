@@ -18,7 +18,7 @@ Une application web moderne et simple pour la gestion de produits. Elle permet a
 
 **Page de Connexion**
 *L'accès à l'application est protégé par Spring Security.*
-![Page de Connexion](screenshots/auth.png)
+![Page de Connexion](auth.png)
 
 **Liste des Produits (Vue Utilisateur)**
 *Vue paginée et consultable par tous les utilisateurs connectés.*
