@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout1">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+
+
+
+<body>
+<div class="p-3" layout:fragment="content1">
+    <div class="p-3" sec:authorize="hasRole('ADMIN')">
+        <a class="btn btn-primary" th:href="@{/admin/newProduct}">New Product</a>
+    </div>
+    <table class="table">
+        <thead>
+        <th>ID</th><th>Name</th><th>Price</th><th>Quantity</th>
+        </thead>
+        <tbody>
+        <tr th:each="p:${productList}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.price}"></td>
+            <td th:text="${p.qte}"></td>
+            <td sec:authorize="hasRole('ADMIN')">
+                <form method="post" th:action="@{/admin/delete(id=${p.id})}">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
